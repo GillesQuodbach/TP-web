@@ -19,11 +19,21 @@
       format("svg");
 }
 
+header {
+  height: 156px;
+  background-color: green;
+}
+
+footer {
+  height: 156px;
+  background-color: pink;
+}
+
 .card {
   padding-left: 16px;
   width: 245px;
   height: 295px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .image-container {
@@ -47,26 +57,46 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #5a5a5a;
+  font-weight: 700;
 }
 
 .card-footer {
   margin-top: 8px;
+  line-height: 0.7rem;
+  display: block;
+  margin-block-start: 1em;
 }
 
 .card-footer li {
   list-style: none;
   display: inline;
+  vertical-align: middle;
 }
 .card-footer-item {
-  color: black;
+  color: #222;
   font-size: 0.875rem;
   font-weight: 500;
+  padding-right: 6px;
+  margin-right: 6px;
+  margin-top: 4px;
 }
 
 .clock {
   color: #5a5a5a;
   font-size: 0.875rem;
   font-weight: 700;
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+}
+
+.pipe {
+  border-right: 1px solid #dbdbdb;
+}
+
+.dialogue-icone {
+  width: 13px;
+  height: 13px;
 }
 .extern-circle {
   position: relative;
