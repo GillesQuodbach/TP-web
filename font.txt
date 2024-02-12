@@ -1,0 +1,26 @@
+Ajouter le lien dans le head du index.html : 
+
+<link
+      href="https://db.onlinewebfonts.com/c/a1d0120b37754be8e80e39ab6ab95130?family=BBC+Reith+Sans"
+      rel="stylesheet"
+    />
+
+Ajouter le code suivant dans le fichier css:
+
+@font-face {
+  font-family: "BBC Reith Sans";
+  src: url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.eot");
+  src: url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.svg#BBC Reith Sans")
+      format("svg");
+}
+
+Ajouter la ligne suivante au text dans le css:
+  font-family: "BBC Reith Sans";

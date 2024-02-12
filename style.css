@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BBC Reith Sans";
+  src: url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.eot");
+  src: url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.svg#BBC Reith Sans")
+      format("svg");
+}
+
+.card {
+  padding-left: 16px;
+  width: 245px;
+  height: 295px;
+  border: 1px solid black;
+}
+
+.image-container {
+  height: 128px;
+}
+.card-image {
+  height: 128px;
+}
+
+.card-title {
+  font-family: "BBC Reith Sans";
+  color: black;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.card-text {
+  font-family: "BBC Reith Sans";
+  margin-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #5a5a5a;
+}
+
+.card-footer {
+  margin-top: 8px;
+}
+
+.card-footer li {
+  list-style: none;
+  display: inline;
+}
+.card-footer-item {
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.clock {
+  color: #5a5a5a;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.extern-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #ba1818;
+  z-index: 0;
+}
+
+.intern-circle {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 75px;
+  height: 75px;
+  background-color: #ba1818;
+  z-index: 10000;
+  border-radius: 50%;
+  animation: blinking 2s infinite ease-in-out;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
