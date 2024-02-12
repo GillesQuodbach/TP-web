@@ -29,6 +29,19 @@ footer {
   background-color: pink;
 }
 
+.main-container {
+  padding: 1rem;
+}
+
+.section-1 {
+  background-color: aquamarine;
+  height: 375px;
+}
+
+.primary-story {
+  background-color: blueviolet;
+}
+
 .card {
   padding-left: 16px;
   width: 245px;
@@ -94,7 +107,7 @@ footer {
   border-right: 1px solid #dbdbdb;
 }
 
-.dialogue-icone {
+.dialogue-icon {
   width: 13px;
   height: 13px;
 }
