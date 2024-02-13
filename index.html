@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://db.onlinewebfonts.com/c/a1d0120b37754be8e80e39ab6ab95130?family=BBC+Reith+Sans"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="style.css" rel="stylesheet" />
-  <link href="https://db.onlinewebfonts.com/c/a1d0120b37754be8e80e39ab6ab95130?family=BBC+Reith+Sans"
-    rel="stylesheet" />
-  <title>Document</title>
-</head>
-
-<body>
-  <header>
-    <nav>
+  <body>
+    <header>
+      <div class="header-top-main-container">
+        <div class="header-top-content-container">
+          <img class="logo" src="/img/logoBBC.png" alt="logo" />
+          <div class="sign-in-container">
+            <svg
+              class="signInLogo"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#000000"
+                d="M16 17.5a7.878 7.878 0 01-8-7.75A7.878 7.878 0 0116 2a7.878 7.878 0 018 7.75 7.878 7.878 0 01-8 7.75zM2 30c0-5.883 7.519-10 14.014-10C22.48 20 30 24.12 30 29.994c0 .005-28 .007-28 .005z"
+              />
+            </svg>
+            <p class="signInText">SignIn</p>
+          </div>
+          <span class="nav-main-container">
+            <li class="home">Home</li>
+            <li class="home">News</li>
+            <li class="home">Sport</li>
+            <li class="home">Earth</li>
+            <li class="home">Reel</li>
+            <li class="home">Worklife</li>
+            <li class="home">Travel</li>
+            <li class="home">Culture</li>
+          </span>
+          <svg
+            class="points orbit-header-more-desktop"
+            width="20"
+            height="4"
+            viewBox="0 0 20 4"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Overflow" transform="translate(-14.000000, -22.000000)">
+              <path
+                d="M18,22 L18,26 L14,26 L14,22 L18,22 Z M34,22 L34,26 L30,26 L30,22 L34,22 Z M26,22 L26,26 L22,26 L22,22 L26,22 Z"
+                id="More"
+              ></path>
+            </g>
+          </svg>
+          <div class="input-container">
+            <svg
+              class="search-icon orbit-search-button-icon-with-text"
+              width="15"
+              height="16"
+              viewBox="0 0 15 16"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M6,-5.32907052e-15 C9.3137085,-5.32907052e-15 12,2.6862915 12,6 C12,7.43892143 11.4934776,8.75953821 10.6490096,9.79327337 L15,14.24 L13.2782609,16 L8.72578477,11.3465317 C7.90789326,11.7643456 6.98146665,12 6,12 C2.6862915,12 -1.687539e-14,9.3137085 -1.687539e-14,6 C-1.687539e-14,2.6862915 2.6862915,-5.32907052e-15 6,-5.32907052e-15 Z M6,1.5 C3.51471863,1.5 1.5,3.51471863 1.5,6 C1.5,8.48528137 3.51471863,10.5 6,10.5 C8.48528137,10.5 10.5,8.48528137 10.5,6 C10.5,3.51471863 8.48528137,1.5 6,1.5 Z"
+              ></path>
+            </svg>
+            <span>Search BBC</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-main-red-container">
+        <div class="header-middle-main-container">
+          <svg
+            class="header-news-text"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            width="120px"
+            viewBox="0 0 430.39658 110.75903"
+            enable-background="new 3367.9 3.96 61 15.33"
+            preserveAspectRatio="xMinYMin meet"
+          >
+            <path
+              d="M68.982,108.52892q-11.5965-18.582-23.49-37.242-11.895-18.6555-23.49-36.2v73.442H0V2.23092H23.192q12.042,17.9895,23.713,36.052,11.66852,18.063,23.266,36.646V2.22992H92.174v106.298H68.982Zm44.259-106.298h73.145v19.029h-50.25v23.044h44.601v19.029H136.136v26.166h53.075v19.03h-75.97Zm177.914,106.298q-5.055-17.98651-9.886-35.978-4.833-17.9865-9.441-35.978-4.45948,17.9895-9.217,35.978-4.7595,17.991-9.812,35.978H228.566q-7.5825-26.0145-14.57-52.629-6.99-26.6115-13.231-53.67h24.976q3.71545,20.6655,7.88,41.33,4.1595,20.667,8.771,40.586,9.95852-38.802,18.881-77.456h22.3q4.461,19.032,9.143,37.985,4.683,18.95547,9.589,37.836,4.461-19.62453,8.623-39.843,4.15951-20.2155,7.73-40.438h24.531q-6.2445,27.06-13.231,53.67-6.99,26.613-14.57,52.629Zm95.37,2.23a78.3712,78.3712,0,0,1-17.32-1.933,66.25651,66.25651,0,0,1-16.428-6.096v-20.516a63.9326,63.9326,0,0,0,33.748,9.664q10.10857,0,15.387-3.419a10.74975,10.74975,0,0,0,5.278-9.515,9.75149,9.75149,0,0,0-2.602-7.211,18.55926,18.55926,0,0,0-6.913-4.163,99.45515,99.45515,0,0,0-9.663-2.899,110.6498,110.6498,0,0,1-15.462-4.757,45.038,45.038,0,0,1-11.299-6.319,23.84449,23.84449,0,0,1-6.987-8.771,28.94176,28.94176,0,0,1-2.379-12.265,29.44592,29.44592,0,0,1,5.129-17.395A32.71617,32.71617,0,0,1,371.51,3.93892q9.366-3.9375,22.3-3.939a72.22352,72.22352,0,0,1,16.651,1.933,67.68455,67.68455,0,0,1,14.718,5.204v20.219a56.13379,56.13379,0,0,0-14.792-6.244,63.27662,63.27662,0,0,0-16.577-2.231q-9.07045,0-14.049,3.122a9.935,9.935,0,0,0-4.981,8.92,9.09272,9.09272,0,0,0,2.379,6.616,17.3599,17.3599,0,0,0,6.765,4.014q4.383,1.5615,10.332,3.048,7.58248,1.935,14.124,4.237a45.86268,45.86268,0,0,1,11.521,5.872,24.45917,24.45917,0,0,1,7.731,9.069,30.06172,30.06172,0,0,1,2.75,13.529q0,10.55852-5.203,18.063a32.29,32.29,0,0,1-15.016,11.447Q400.353,110.75842,386.525,110.75892Z"
+              transform="translate(0 0.0001)"
+              style="fill: #fff"
+            ></path>
+          </svg>
+        </div>
+        <div class="header-bottom-main-container">
+          <ul class="nav-container">
+            <li class="nav-item nav-item-first">Home</li>
+            <li class="nav-item">War in Ukraine</li>
+            <li class="nav-item">Climate</li>
+            <li class="nav-item">Israel-Gaza war</li>
+            <li class="nav-item">Video</li>
+            <li class="nav-item">World</li>
+            <li class="nav-item">UK</li>
+            <li class="nav-item">Business</li>
+            <li class="nav-item">Tech</li>
+            <li class="nav-item">Science</li>
+            <li class="nav-item">Entertainment & Art</li>
+            <li class="nav-item">Health</li>
+            <li class="nav-item">World News TV</li>
+            <li class="nav-item nav-item-end">More</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <nav>
         <ul>
             <li><a href="#"><img src="img/logoBBC.png" alt="logo BBC" id="logo"></a></li>
             <li id="signIn"><img src="img/signIn.png" alt="loggin" id="signInImage"><p class="mainMenu">Sign in</p></div></li>
@@ -53,439 +150,574 @@
             <li class="tiniBorder"><a href="#">World news TV</a></li>
             <li><a href="#">More</a></li>
         </ul>
-    </div>
-</header>
+    </div> -->
+    </header>
 
-<!-- ? MAIN CONTAINER -->
-  <div class="main-container">
-    <!-- ! Flex container -->
-    <div class="flex-container">
+    <!-- ? MAIN CONTAINER -->
+    <div class="main-container">
+      <!-- ! Flex container -->
+      <div class="flex-container">
+        <div class="card">
+          <div class="image-container">
+            <img class="card-image" src="img/Bowen.JPG" alt="Bowen" />
+            <div class="card-text-section">
+              <h3 class="card-title">
+                Why is Rafah the new focus in Gaza war ?
+              </h3>
+              <p class="card-text">
+                International editor Jeremy Bowen analyses Israel's decision to
+                expand military operations south into Rafah.
+                <br />
+              </p>
+              <ul class="card-footer">
+                <svg class="clock" viewBox="0 0 32 32" focusable="false">
+                  <polygon
+                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                  ></polygon>
+                  <path
+                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                  ></path>
+                </svg>
+                <li class="card-footer-item pipe">1h</li>
 
+                <li class="card-footer-item pipe">BBC Sport</li>
+                <li class="card-footer-item">
+                  <svg
+                    class="dialogue-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 32 32"
+                    focusable="false"
+                  >
+                    <path
+                      d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Carte marathon -->
+        <div class="card">
+          <div class="image-container">
+            <img
+              class="card-image"
+              src="img/marathon_record.JPG"
+              alt="marathon"
+            />
+            <div class="card-text-section">
+              <h3 class="card-title">
+                Martahon record holder Kiptum dies in car accident
+              </h3>
+              <p class="card-text">
+                The 24-year-old Kenyan athlete had the potential to be one of
+                the greatest runners over 42 km.
+              </p>
+              <br />
+              <ul class="card-footer">
+                <svg class="clock" viewBox="0 0 32 32" focusable="false">
+                  <polygon
+                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                  ></polygon>
+                  <path
+                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                  ></path>
+                </svg>
+                <li class="card-footer-item pipe">2h</li>
+
+                <li class="card-footer-item pipe">Africa</li>
+                <li class="card-footer-item">
+                  <svg
+                    class="dialogue-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 32 32"
+                    focusable="false"
+                  >
+                    <path
+                      d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Carte Israel rescues two hostages -->
+        <div class="card">
+          <div class="image-container">
+            <img
+              class="card-image"
+              src="img/israel_rescues_two_hostages.webp"
+              alt="israel_rescues_two_hostages"
+            />
+            <div class="card-text-section">
+              <h3 class="card-title">
+                Israel rescues two hostages in Rafah amid deadly strikes
+              </h3>
+              <p class="card-text">
+                The two men, Israeli-Argentinians, were rescued as Israel
+                carried out air strikes on the southern Gazan city.
+              </p>
+              <ul class="card-footer">
+                <svg class="clock" viewBox="0 0 32 32" focusable="false">
+                  <polygon
+                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                  ></polygon>
+                  <path
+                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                  ></path>
+                </svg>
+                <li class="card-footer-item pipe">1h</li>
+
+                <li class="card-footer-item pipe">Middle East</li>
+                <li class="card-footer-item">
+                  <svg
+                    class="dialogue-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 32 32"
+                    focusable="false"
+                  >
+                    <path
+                      d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Carte Man sentenced to death for Iranian director's murder -->
+        <div class="card">
+          <div class="image-container">
+            <img
+              class="card-image"
+              src="img/dariush_mehrjui_and_vahideh.jpg.webp"
+              alt="dariush_mehrjui_and_vahideh"
+            />
+            <div class="card-text-section">
+              <h3 class="card-title">
+                Man sentenced to death for Iranian director's murder
+              </h3>
+              <p class="card-text">
+                Dariush Mehjuri and his wife, Vahideh Mohammadifar, were stabbed
+                to death in their home in October.
+              </p>
+              <ul class="card-footer">
+                <svg class="clock" viewBox="0 0 32 32" focusable="false">
+                  <polygon
+                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                  ></polygon>
+                  <path
+                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                  ></path>
+                </svg>
+                <li class="card-footer-item pipe">1h</li>
+
+                <li class="card-footer-item pipe">Middle Est</li>
+                <li class="card-footer-item">
+                  <svg
+                    class="dialogue-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 32 32"
+                    focusable="false"
+                  >
+                    <path
+                      d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! flex container-->
+
+      <!-- ! flex container2-->
+
+      <!-- ! Carte Death toll rises to 68 in Philippines landslide -->
+      <div class="flex-container2">
+        <div class="card">
+          <h3 class="card-title">
+            Death toll rises to 68 in Philippines landslide
+          </h3>
+          <br />
+          <ul class="card-footer">
+            <svg class="clock" viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path>
+            </svg>
+            <li class="card-footer-item pipe">1h</li>
+            <li class="card-footer-item pipe">Asia</li>
+            <li class="card-footer-item">
+              <svg
+                class="dialogue-icon"
+                aria-hidden="true"
+                viewBox="0 0 32 32"
+                focusable="false"
+              >
+                <path
+                  d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ! Carte What now in Pakistan after khan vote surprise -->
+        <div class="card">
+          <h3 class="card-title">
+            What now in Pakistan after khan vote surprise?
+          </h3>
+          <br />
+          <ul class="card-footer">
+            <svg class="clock" viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path>
+            </svg>
+            <li class="card-footer-item pipe">5h</li>
+            <li class="card-footer-item pipe">Asia</li>
+            <li class="card-footer-item">
+              <svg
+                class="dialogue-icon"
+                aria-hidden="true"
+                viewBox="0 0 32 32"
+                focusable="false"
+              >
+                <path
+                  d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ! Carte US defence secretary tranfers duties on hospital return -->
+        <div class="card">
+          <h3 class="card-title">
+            US defence secretary tranfers duties on hospital return
+          </h3>
+          <ul class="card-footer">
+            <svg class="clock" viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path>
+            </svg>
+            <li class="card-footer-item pipe">8h</li>
+
+            <li class="card-footer-item pipe">US & Canada</li>
+            <li class="card-footer-item">
+              <svg
+                class="dialogue-icon"
+                aria-hidden="true"
+                viewBox="0 0 32 32"
+                focusable="false"
+              >
+                <path
+                  d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ! 'We feel betrayed' -why anger has engulfed Senegal -->
+        <div class="card">
+          <h3 class="card-title">
+            We feel betrayed' -why anger has engulfed Senegal
+          </h3>
+          <br />
+          <ul class="card-footer">
+            <svg class="clock" viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path>
+            </svg>
+            <li class="card-footer-item pipe">1h</li>
+
+            <li class="card-footer-item pipe">Middle Est</li>
+            <li class="card-footer-item">
+              <svg
+                class="dialogue-icon"
+                aria-hidden="true"
+                viewBox="0 0 32 32"
+                focusable="false"
+              >
+                <path
+                  d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ! 'We feel betrayed' -why anger has engulfed Senegal -->
+        <div class="card">
+          <h3 class="card-title">
+            Greece: Four dead in shooting at shipping company
+          </h3>
+          <ul class="card-footer">
+            <svg class="clock" viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path>
+            </svg>
+            <li class="card-footer-item pipe">25m</li>
+
+            <li class="card-footer-item pipe">Europe</li>
+            <li class="card-footer-item">
+              <svg
+                class="dialogue-icon"
+                aria-hidden="true"
+                viewBox="0 0 32 32"
+                focusable="false"
+              >
+                <path
+                  d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ! Carte Watch: Kelce and Swift celebrate at Super Bowl -->
       <div class="card">
         <div class="image-container">
-          <img class="card-image" src="img/Bowen.JPG" alt="Bowen" />
+          <img
+            class="card-image"
+            src="img/watch_KelceandSwift_celebrate.JPG"
+            alt="watch_KelceandSwift_celebrate"
+          />
           <div class="card-text-section">
             <h3 class="card-title">
-              Why is Rafah the new focus in Gaza war ?
+              Watch: Kelce and Swift celebrate at Super Bowl
             </h3>
+            <br />
             <p class="card-text">
-              International editor Jeremy Bowen analyses Israel's decision to expand military operations south into
-              Rafah.
-              <br>
+              The pop icon flew in from Japan to watch her boyfriend play in Las
+              Vegas at the 2024 championship game.
             </p>
             <ul class="card-footer">
               <svg class="clock" viewBox="0 0 32 32" focusable="false">
-                <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
                 <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-                </path>
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path>
+              </svg>
+              <li class="card-footer-item pipe">2h</li>
+
+              <li class="card-footer-item pipe">US & Canada</li>
+              <li class="card-footer-item">
+                <svg
+                  class="dialogue-icon"
+                  aria-hidden="true"
+                  viewBox="0 0 32 32"
+                  focusable="false"
+                >
+                  <path
+                    d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-container">
+          <img class="card-image" src="img/card-image.jpg" alt="superbowl" />
+          <div class="card-text-section">
+            <h3 class="card-title">
+              Chiefs beat 49ers in overtime to defend Super Bowl title
+            </h3>
+            <br />
+            <p class="card-text">
+              The Kansas City Chiefs fight back to beat the San Francisco 49ers
+              25-22 in overtime and win their third Super Bowl in five years.
+            </p>
+            <ul class="card-footer">
+              <svg class="clock" viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path>
               </svg>
               <li class="card-footer-item pipe">1h</li>
 
               <li class="card-footer-item pipe">BBC Sport</li>
               <li class="card-footer-item">
-                <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-                  <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
+                <svg
+                  class="dialogue-icon"
+                  aria-hidden="true"
+                  viewBox="0 0 32 32"
+                  focusable="false"
+                >
+                  <path
+                    d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"
+                  ></path>
                 </svg>
               </li>
             </ul>
           </div>
         </div>
       </div>
-
-
-
-      <!-- ! Carte marathon -->
-      <div class="card">
-        <div class="image-container">
-          <img class="card-image" src="img/marathon_record.JPG" alt="marathon" />
-          <div class="card-text-section">
-            <h3 class="card-title">
-              Martahon record holder Kiptum dies in car accident
-            </h3>
-            <p class="card-text">
-              The 24-year-old Kenyan athlete had the potential to be one of the greatest runners over 42 km.
-            </p>
-            <br>
-            <ul class="card-footer">
-              <svg class="clock" viewBox="0 0 32 32" focusable="false">
-                <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-                </path>
-              </svg>
-              <li class="card-footer-item pipe">2h</li>
-
-              <li class="card-footer-item pipe">Africa</li>
-              <li class="card-footer-item">
-                <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-                  <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-                </svg>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- ! Carte Israel rescues two hostages -->
-      <div class="card">
-        <div class="image-container">
-          <img class="card-image" src="img/israel_rescues_two_hostages.webp" alt="israel_rescues_two_hostages" />
-          <div class="card-text-section">
-            <h3 class="card-title">
-              Israel rescues two hostages in Rafah amid deadly strikes
-            </h3>
-            <p class="card-text">
-              The two men, Israeli-Argentinians, were rescued as Israel carried out air strikes on the southern Gazan
-              city.
-            </p>
-            <ul class="card-footer">
-              <svg class="clock" viewBox="0 0 32 32" focusable="false">
-                <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-                </path>
-              </svg>
-              <li class="card-footer-item pipe">1h</li>
-
-              <li class="card-footer-item pipe">Middle East</li>
-              <li class="card-footer-item">
-                <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-                  <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-                </svg>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- ! Carte Man sentenced to death for Iranian director's murder -->
-      <div class="card">
-        <div class="image-container">
-          <img class="card-image" src="img/dariush_mehrjui_and_vahideh.jpg.webp" alt="dariush_mehrjui_and_vahideh" />
-          <div class="card-text-section">
-            <h3 class="card-title">
-              Man sentenced to death for Iranian director's murder
-            </h3>
-            <p class="card-text">
-              Dariush Mehjuri and his wife, Vahideh Mohammadifar, were stabbed to death in their home in October.
-            </p>
-            <ul class="card-footer">
-              <svg class="clock" viewBox="0 0 32 32" focusable="false">
-                <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-                <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-                </path>
-              </svg>
-              <li class="card-footer-item pipe">1h</li>
-
-              <li class="card-footer-item pipe">Middle Est</li>
-              <li class="card-footer-item">
-                <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-                  <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-                </svg>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- ! flex container-->
-
-
-
-
-    <!-- ! flex container2-->
-
-    <!-- ! Carte Death toll rises to 68 in Philippines landslide -->
-    <div class="flex-container2">
-      <div class="card">
-        <h3 class="card-title">
-          Death toll rises to 68 in Philippines landslide
-        </h3>
-        <br>
-        <ul class="card-footer">
-          <svg class="clock" viewBox="0 0 32 32" focusable="false">
-            <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-            <path
-              d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-            </path>
-          </svg>
-          <li class="card-footer-item pipe">1h</li>
-          <li class="card-footer-item pipe">Asia</li>
-          <li class="card-footer-item">
-            <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-              <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-            </svg>
-          </li>
-        </ul>
-      </div>
-
-    <!-- ! Carte What now in Pakistan after khan vote surprise -->
-      <div class="card">
-        <h3 class="card-title">
-          What now in Pakistan after khan vote surprise?
-        </h3>
-        <br>
-        <ul class="card-footer">
-          <svg class="clock" viewBox="0 0 32 32" focusable="false">
-            <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-            <path
-              d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-            </path>
-          </svg>
-          <li class="card-footer-item pipe">5h</li>
-          <li class="card-footer-item pipe">Asia</li>
-          <li class="card-footer-item">
-            <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-              <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-            </svg>
-          </li>
-        </ul>
-      </div>
-     
-     <!-- ! Carte US defence secretary tranfers duties on hospital return -->
-      <div class="card">
-        <h3 class="card-title">
-          US defence secretary tranfers duties on hospital return
-        </h3>
-        <ul class="card-footer">
-          <svg class="clock" viewBox="0 0 32 32" focusable="false">
-            <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-            <path
-              d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-            </path>
-          </svg>
-          <li class="card-footer-item pipe">8h</li>
-
-          <li class="card-footer-item pipe">US & Canada</li>
-          <li class="card-footer-item">
-            <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-              <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-            </svg>
-          </li>
-        </ul>
-      </div>
-
-      <!-- ! 'We feel betrayed' -why anger has engulfed Senegal -->
-      <div class="card">
-        <h3 class="card-title">
-          We feel betrayed' -why anger has engulfed Senegal
-        </h3>
-        <br>
-        <ul class="card-footer">
-          <svg class="clock" viewBox="0 0 32 32" focusable="false">
-            <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-            <path
-              d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-            </path>
-          </svg>
-          <li class="card-footer-item pipe">1h</li>
-
-          <li class="card-footer-item pipe">Middle Est</li>
-          <li class="card-footer-item">
-            <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-              <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-            </svg>
-          </li>
-        </ul>
-      </div>
-
-      <!-- ! 'We feel betrayed' -why anger has engulfed Senegal -->
-      <div class="card">
-        <h3 class="card-title">
-          Greece: Four dead in shooting at shipping company
-        </h3>
-        <ul class="card-footer">
-          <svg class="clock" viewBox="0 0 32 32" focusable="false">
-            <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-            <path
-              d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-            </path>
-          </svg>
-          <li class="card-footer-item pipe">25m</li>
-
-          <li class="card-footer-item pipe">Europe</li>
-          <li class="card-footer-item">
-            <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-              <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-            </svg>
-          </li>
-        </ul>
-      </div>
-
     </div>
-  
-<!-- ! Carte Watch: Kelce and Swift celebrate at Super Bowl -->
-<div class="card">
-  <div class="image-container">
-    <img class="card-image" src="img/watch_KelceandSwift_celebrate.JPG" alt="watch_KelceandSwift_celebrate" />
-    <div class="card-text-section">
-      <h3 class="card-title">
-        Watch: Kelce and Swift celebrate at Super Bowl
-      </h3>
-      <br>
-      <p class="card-text">
-        The pop icon flew in from Japan to watch her boyfriend play in Las Vegas at the 2024 championship game.
-      </p>
-      <ul class="card-footer">
-        <svg class="clock" viewBox="0 0 32 32" focusable="false">
-          <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-          <path
-            d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-          </path>
-        </svg>
-        <li class="card-footer-item pipe">2h</li>
 
-        <li class="card-footer-item pipe">US & Canada</li>
-        <li class="card-footer-item">
-          <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-            <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-          </svg>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="card">
-  <div class="image-container">
-    <img class="card-image" src="img/card-image.jpg" alt="superbowl" />
-    <div class="card-text-section">
-      <h3 class="card-title">
-        Chiefs beat 49ers in overtime to defend Super Bowl title
-      </h3>
-      <br>
-      <p class="card-text">
-        The Kansas City Chiefs fight back to beat the San Francisco 49ers
-        25-22 in overtime and win their third Super Bowl in five years.
-      </p>
-      <ul class="card-footer">
-        <svg class="clock" viewBox="0 0 32 32" focusable="false">
-          <polygon points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"></polygon>
-          <path
-            d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z">
-          </path>
-        </svg>
-        <li class="card-footer-item pipe">1h</li>
-
-        <li class="card-footer-item pipe">BBC Sport</li>
-        <li class="card-footer-item">
-          <svg class="dialogue-icon" aria-hidden="true" viewBox="0 0 32 32" focusable="false">
-            <path d="M0 0v32l8-8h24V0H0zm4 10h18v4H4v-4zm24 10H4v-4h24v4zm0-12H4V4h24v4z"></path>
-          </svg>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-  </div> 
-
-  <footer>
-    <div class="siteMap">
+    <footer>
+      <div class="siteMap">
         <div class="navigation">
-            <h2>Explore the BBC</h2>
-            <div class="commercial-legacy">
-                <ul>
-                    <li>
-                        <a href="https://www.bbc.com/">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/news">
-                            <span>News</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/sport">
-                            <span>Sport</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/future/earth">
-                            <span>Earth</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/reel">
-                            <span>Reel</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/worklife">
-                            <span>Worklife</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/travel">
-                            <span>Travel</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/culture">
-                            <span>Culture</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/future">
-                            <span>Future</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.co.uk/schedules/p00fzl9m">
-                            <span>TV</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.com/weather">
-                            <span>Weather</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bbc.co.uk/sounds">
-                            <span>Sounds</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          <h2>Explore the BBC</h2>
+          <div class="commercial-legacy">
+            <ul>
+              <li>
+                <a href="https://www.bbc.com/">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/news">
+                  <span>News</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/sport">
+                  <span>Sport</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/future/earth">
+                  <span>Earth</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/reel">
+                  <span>Reel</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/worklife">
+                  <span>Worklife</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/travel">
+                  <span>Travel</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/culture">
+                  <span>Culture</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/future">
+                  <span>Future</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.co.uk/schedules/p00fzl9m">
+                  <span>TV</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/weather">
+                  <span>Weather</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.bbc.co.uk/sounds">
+                  <span>Sounds</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="content-info">
-            <div class="policies">
-                <ul>
-                    <li><a href="https://www.bbc.co.uk/usingthebbc/terms/">Terms of use</a></li>
-                    <li><a href="https://www.bbc.co.uk/aboutthebbc">About the BBC</a></li>
-                    <li><a href="https://www.bbc.com/usingthebbc/privacy/">Privacy Policy</a></li>
-                    <li><a href="https://www.bbc.com/usingthebbc/cookies/">Cookies</a></li>
-                    <li><a href="https://www.bbc.co.uk/accessibility/">Accessibility Help</a></li>
-                    <li><a href="https://www.bbc.co.uk/guidance">Parental Guidance</a></li>
-                    <li><a href="https://www.bbc.co.uk/contact">Contact the BBC</a></li>
-                    <li><a href="https://www.bbc.co.uk/bbcnewsletter">BBC email for you</a></li>
-                    <li><a href="https://www.bbcglobalnews.com/">Advertise with us</a></li>
-                    <li><a href="https://www.bbc.com/news#">Do not share or sell my info</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <label for="copyright">
-                    <em>Copyright © 2024 BBC.</em>
-                    The BBC is not responsible for the content of external sites.
-                </label>
-                <span><a href="https://www.bbc.co.uk/editorialguidelines/guidance/feeds-and-links"> Read about our approach to external linking. </a></span>
-            </div>
+          <div class="policies">
+            <ul>
+              <li>
+                <a href="https://www.bbc.co.uk/usingthebbc/terms/"
+                  >Terms of use</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bbc.co.uk/aboutthebbc">About the BBC</a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/usingthebbc/privacy/"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bbc.com/usingthebbc/cookies/">Cookies</a>
+              </li>
+              <li>
+                <a href="https://www.bbc.co.uk/accessibility/"
+                  >Accessibility Help</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bbc.co.uk/guidance">Parental Guidance</a>
+              </li>
+              <li>
+                <a href="https://www.bbc.co.uk/contact">Contact the BBC</a>
+              </li>
+              <li>
+                <a href="https://www.bbc.co.uk/bbcnewsletter"
+                  >BBC email for you</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bbcglobalnews.com/">Advertise with us</a>
+              </li>
+              <li>
+                <a href="https://www.bbc.com/news#"
+                  >Do not share or sell my info</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <label for="copyright">
+              <em>Copyright © 2024 BBC.</em>
+              The BBC is not responsible for the content of external sites.
+            </label>
+            <span
+              ><a
+                href="https://www.bbc.co.uk/editorialguidelines/guidance/feeds-and-links"
+              >
+                Read about our approach to external linking.
+              </a></span
+            >
+          </div>
         </div>
-    </div>
-</footer>
-
-</body>
-
+      </div>
+    </footer>
+  </body>
 </html>

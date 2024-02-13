@@ -24,9 +24,148 @@
 }
 
 header {
+  font-family: "BBC Reith Sans";
   position: relative;
+  height: calc(64px + 56px + 36px);
 }
-#logo {
+
+.header-top-main-container {
+  height: 64px;
+}
+
+.header-middle-main-container {
+  height: 56px;
+  background-color: aqua;
+}
+
+.header-bottom-main-container {
+  height: 36px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.header-top-content-container {
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header-main-red-container {
+  background-color: #b80000;
+}
+.header-bottom-main-container {
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-item {
+  color: #fff;
+  width: fit-content;
+  margin: 0;
+  padding: 0 12px;
+  position: relative;
+  border-right: 1px solid #bb454f;
+}
+
+.nav-item:hover::after {
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  transform: translate(0%, -50%);
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+}
+
+.nav-item-end {
+  border-right: 0px solid rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  height: 32px;
+  margin-right: 20px;
+}
+
+.sign-in-container {
+  position: relative;
+  width: 176px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sign-in-container::after {
+  position: absolute;
+  content: "";
+  width: 176px;
+  height: 24px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.signInLogo {
+  height: 28px;
+}
+
+.signInText {
+  margin-left: 6px;
+}
+
+.nav-main-container {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 638px;
+  font-weight: 700;
+}
+
+.points {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.input-container {
+  width: 200px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: none;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+}
+
+.search-icon {
+  margin-right: 8px;
+}
+
+.header-middle-main-container {
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #b80000;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-item {
+  font-size: 1rem;
+}
+/* #logo {
   width: 130px;
   max-height: 35px;
 }
@@ -142,6 +281,7 @@ header #signIn {
   border-left: 0.1em solid #fff;
   border-right: 0.1em solid #fff;
 }
+*/
 
 /* header {
   height: 156px;
