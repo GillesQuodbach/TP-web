@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 62.5%;
+}
 @font-face {
   font-family: "BBC Reith Sans";
   src: url("https://db.onlinewebfonts.com/t/a1d0120b37754be8e80e39ab6ab95130.eot");
@@ -290,15 +294,15 @@ header #signIn {
 .flex-container {
   display: flex;
   flex-direction: row;
-  border: 1px solid #9e9a9a;
-  padding: 20px;
+  /* border: 1px solid #9e9a9a;
+  padding: 20px; */
 }
 
 .flex-container2 {
   display: flex;
   flex-direction: row;
-  border: 1px solid #9e9a9a;
-  padding: 20px;
+  /* border: 1px solid #9e9a9a;
+  padding: 20px; */
 }
 
 footer {
@@ -311,7 +315,9 @@ footer {
 }
 
 .siteMap {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 62%;
 }
 .navigation {
   font-family: "BBC Reith Sans";
@@ -406,18 +412,4 @@ footer {
 
 .copyright em {
   font-weight: 700;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #9e9a9a;
-  padding: 20px;
-}
-
-.flex-container2 {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #9e9a9a;
-  padding: 20px;
 }
