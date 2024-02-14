@@ -23,6 +23,21 @@
       format("svg");
 }
 
+@font-face {
+  font-family: "BBC Reith Serif";
+  src: url("https://db.onlinewebfonts.com/t/92d9892fa0ef64406bf151c8f730eff2.eot");
+  src: url("https://db.onlinewebfonts.com/t/92d9892fa0ef64406bf151c8f730eff2.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/92d9892fa0ef64406bf151c8f730eff2.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/92d9892fa0ef64406bf151c8f730eff2.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/92d9892fa0ef64406bf151c8f730eff2.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/92d9892fa0ef64406bf151c8f730eff2.svg#BBC Reith Serif")
+      format("svg");
+}
+
 header {
   font-family: "BBC Reith Sans";
   position: relative;
@@ -162,24 +177,6 @@ header {
   align-items: center;
   background-color: #b80000;
 }
-
-/* #logo {
-  width: 130px;
-  max-height: 35px;
-}
-#signIn {
-  width: 176px;
-  transform: translateY(-50%);
-}
-#signIn img {
-  padding: 2px 10px;
-  float: left;
-}
-header nav {
-  height: 64px;
-  width: 100%;
-  margin: 8px 0 -8px 0;
-}
 /* pour afficher le menu avec les marges sur un grand écran */
 @media screen and (min-width: 1280px) {
   header nav {
@@ -199,177 +196,146 @@ header li {
   margin: auto;
   padding: 0;
 }
-header li a {
-  display: inline-block;
-  min-width: 60px;
-  text-decoration: none;
-  padding: 2px 5px 0 0;
-  color: #000;
-  font-family: "BBC Reith Sans";
-  font-size: 12px;
-  font-weight: bold;
-}
-.mainMenu {
-  transform: translateY(50%);
-}
-header ul li ul {
-  display: none;
-}
-header ul li:hover ul {
-  display: block;
-}
-header li:hover ul li {
-  float: left;
-  background: #fff;
-}
-/* sous menu */
-.submenu {
-  display: none;
-}
-header nav li:hover .submenu {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0;
-  z-index: 1000;
-}
-.submenu li a {
-  padding: px 5px;
-  width: 100px;
-}
-
-header #logo {
-  height: 60px;
-}
-header #signIn {
-  height: 30px;
-}
-/* menu news */
-#news {
-  background: #b80000;
-  color: white;
-  padding: 0 16%;
-  display: inline-block;
-  width: 100%;
-  height: 86px;
-}
-#news h2 {
-  height: 56px;
-  font-size: 40px;
-  margin-top: -4px;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-.menuNews {
-  height: 36px;
-  margin-top: -24px;
-}
-.menuNews a {
-  color: #fff;
-  font-size: 14px;
-  margin: 0;
-  padding: 0 5px;
-  font-family: "BBC Reith Sans";
-}
-.menuNews a:hover {
-  border-bottom: 4px solid #fff;
-}
-.tiniBorder {
-  border-left: 0.1em solid #fff;
-  border-right: 0.1em solid #fff;
-}
-*/
-
-/* header {
-  height: 156px;
-  background-color: green;
-} */
 
 .main-container {
   padding: 1rem;
+  /* background-color: cadetblue; */
 }
 
-.section-1 {
-  background-color: aquamarine;
-  height: 375px;
+.main-part {
+  display: grid;
+  width: 100%;
+  height: 325px;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-.primary-story {
-  background-color: blueviolet;
-  max-width: 70%;
-  height: 100%;
+.second-part {
+  margin-top: 15px;
+  /* background-color: pink; */
+  height: 295px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* gap: 15px; */
+}
+.third-part {
+  margin-top: 15px;
+  height: fit-content;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+
+  /* gap: 15px; */
+}
+.grid-ad {
+  width: 100%;
+}
+
+.features-container {
+  margin-top: 75px;
   display: flex;
+  padding: 32px 0 16px 16px;
 }
 
-.primary-story-main-text {
-  display: flex;
-  font-size: 1.8rem;
-  width: 260px;
-  height: 170px;
-}
-
-.live-title-container {
-  font-family: Arial, Helvetica, sans-serif, Courier, monospace;
-  background-color: #ffff;
-  /* width: 120px; */
-  height: 30px;
-}
-
-.live-title {
-  vertical-align: middle;
-  margin-left: 10px;
-  font-weight: 700;
-  color: #ba1818;
-  font-size: 2rem;
+.features-text {
+  font-family: "BBC Reith Sans";
+  color: #222222;
+  font-size: 24px;
+  min-width: fit-content;
   margin-right: 10px;
+  font-weight: bold;
+}
+
+.features-line {
+  position: relative;
+  bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #7b756f;
+}
+
+.test-grid {
+  width: 100%;
+  height: 350px;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 35px;
+}
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+
+.square2 {
+  width: 100%;
+  height: 50px;
+  background-color: pink;
 }
 
 .card {
   padding-left: 16px;
   width: 245px;
-  height: 295px;
+  height: fit-content;
   /* border: 1px solid black; */
 }
 
 .image-container {
-  height: 128px;
+  height: fit-content;
 }
 .card-image {
   height: 128px;
 }
 
+.card-title-big {
+  font-family: "BBC Reith Serif";
+  color: #716c65;
+  line-height: 2.2rem;
+  font-size: 1.75rem;
+  margin-top: 8px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
 .card-title {
-  font-family: "BBC Reith Sans";
-  color: black;
+  font-family: "BBC Reith Serif";
+  color: #000000;
   line-height: 1.25rem;
   font-size: 1rem;
   margin-top: 8px;
+  font-weight: 600;
+  vertical-align: middle;
 }
 
 .card-text {
   font-family: "BBC Reith Sans";
   margin-top: 8px;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1.125rem;
   color: #5a5a5a;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .card-footer {
   margin-top: 8px;
   line-height: 0.7rem;
-  display: block;
+  /* display: block; */
   margin-block-start: 1em;
+  vertical-align: middle;
 }
 
 .card-footer li {
+  font-family: "BBC Reith Sans";
   list-style: none;
   display: inline;
   vertical-align: middle;
 }
-.card-footer-item {
-  color: #222;
+
+.card-footer li:first-of-type {
+  color: #5a5a5a;
   font-size: 0.875rem;
   font-weight: 500;
   padding-right: 6px;
@@ -377,13 +343,23 @@ header #signIn {
   margin-top: 4px;
 }
 
-.clock {
-  color: #5a5a5a;
+.card-footer-item {
+  color: #222;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-right: 6px;
+  margin-right: 6px;
+  margin-top: 4px;
+  vertical-align: middle;
+  display: flex;
+}
+
+.card-footer svg {
+  fill: #5a5a5a;
   font-size: 0.875rem;
   font-weight: 700;
   width: 13px;
   height: 13px;
-  vertical-align: middle;
 }
 
 .pipe {
@@ -444,6 +420,7 @@ header #signIn {
 }
 
 footer {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   width: 100%;
