@@ -55,7 +55,7 @@ header {
 
 .header-middle-main-container {
   height: 56px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .header-bottom-main-container {
@@ -206,25 +206,32 @@ header li {
   font-family: "BBC Reith Serif";
   /* background-color: cadetblue; */
   margin-top: 15px;
+  max-width: 1008px;
 }
 
 .main-part {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  /* display: grid;
   width: 100%;
-  height: fit-content;
   grid-template-columns: 1fr 2fr 1fr;
-  column-gap: 15px;
+  column-gap: 20px; */
   margin-bottom: 25px;
+  /* background-color: red; */
 }
 
 .second-part {
   margin-top: 15px;
   /* background-color: pink; */
-  height: 295px;
-  display: grid;
+
+  /* display: grid; */
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   /* gap: 15px; */
+  /* background-color: gray; */
 }
 .third-part {
   margin-top: 15px;
@@ -238,7 +245,7 @@ header li {
   /* gap: 15px; */
 }
 .grid-ad {
-  width: 100%;
+  height: 250px;
 }
 
 .features-container {
@@ -264,16 +271,20 @@ header li {
 }
 
 .card {
-  width: 245px;
+  width: 250px;
   height: fit-content;
-  /* border: 1px solid black; */
+  /* background-color: yellow; */
 }
-
+.card-first {
+  width: 350px;
+}
 .image-container {
+  /* min-width: 100%; */
   height: fit-content;
 }
 .card-image {
-  height: 128px;
+  max-width: 100%;
+  /* height: 135px; */
 }
 
 .card-title-big {
@@ -359,7 +370,7 @@ header li {
 .bottom-text-container {
   width: 100%;
   height: 25px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .circle {
   height: 30px;
@@ -529,7 +540,7 @@ footer {
   width: 85%;
   height: 35px;
   top: -19px;
-  margin-right: 16px;
+  /* margin-right: 16px; */
   border-bottom: 1px solid black;
 }
 
@@ -546,14 +557,15 @@ footer {
 .moment-container {
   display: flex;
   flex-direction: row;
-  flex: 1 1 auto;
+  justify-content: space-between;
+  /* flex: 1 1 auto; */
   width: 100%;
   padding-left: -16px;
 }
 
 .moment-container div {
-  width: 20% !important;
-  padding-left: 16px;
+  width: 225px !important;
+  /* padding-left: 16px; */
 }
 
 .moment-container div img {
@@ -576,6 +588,7 @@ footer {
 .title-mw {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 32px 0 16px 0px;
 }
 
@@ -688,6 +701,7 @@ h3 {
 .secondary-icons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 60%;
 }
 
@@ -799,7 +813,7 @@ h3 {
 .sport-aside {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 20% !important;
+  width: 100% !important;
   position: relative;
 }
 
@@ -836,6 +850,10 @@ h3 {
   height: 133.2px;
 }
 
+.sport h2 {
+  width: max-content;
+}
+
 .video-icon {
   display: inline-block;
   position: relative;
@@ -859,6 +877,7 @@ h3 {
 
 .around-bbc {
   width: 100%;
+  /* background-color: yellow; */
 }
 
 .around-bbc a:nth-of-type(2) {
@@ -871,6 +890,7 @@ h3 {
   width: 100%;
   display: flex;
   flex-direction: row;
+  /* background-color: gray; */
 }
 
 .around-bbc-first {
@@ -885,7 +905,7 @@ h3 {
 .around-bbc-aside {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 40%;
+  width: 100%;
   padding-left: 16px;
 }
 
@@ -930,7 +950,8 @@ h3 {
 .in-news-aside {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 40%;
+  width: 100%;
+  /* background-color: red; */
 }
 
 .features {
@@ -947,11 +968,13 @@ h3 {
 .features-first {
   width: 37%;
   /* padding-left: 16px; */
+  /* background-color: blueviolet; */
 }
 
 .features-first img {
-  width: 100%;
-  padding-right: 10px;
+  /* width: 100%; */
+  height: 270px;
+  /* padding-right: 10px; */
 }
 
 .features-first a {
@@ -964,15 +987,37 @@ h3 {
   color: #b80000;
 }
 
+.features-first h2 {
+  font-family: "BBC Reith Serif";
+  line-height: 1.3;
+}
+
 .features-aside {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
-  width: 40%;
-  margin-right: 16px;
+  width: 100%;
+
+  /* background-color: yellowgreen; */
+}
+
+.features-aside-content h3 {
+  font-family: "BBC Reith Serif";
+  font-weight: 500;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.25;
 }
 
 .features-aside-content {
-  padding-right: 10px;
+  /* padding-right: 10px; */
+  width: 80%;
+  /* background-color: #1da1f2; */
+  margin-left: 16px;
+}
+
+.features-aside-content img {
+  /* padding-right: 10px; */
+  max-width: 190px;
 }
 
 .features-aside-content div {
@@ -1015,6 +1060,49 @@ h3 {
 }
 
 .title-mw h2 {
-  min-width: 300px;
+  min-width: max-content;
   font-family: "BBC Reith Sans";
+  white-space: nowrap;
+}
+
+.moment-title {
+  min-width: max-content;
+  vertical-align: middle;
+}
+
+.title {
+  padding-left: 0;
+}
+
+.social-media-daily a,
+.social-media-news a,
+.social-media-follow a {
+  color: red;
+  font-size: 0.875rem;
+  color: #222;
+  font-weight: bold;
+}
+
+.social-media-follow span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #5a5a5a;
+}
+
+.social-media-follow {
+  width: 52%;
+  /* background-color: yellow; */
+}
+.social-media-daily {
+  max-width: 49%;
+}
+.social-media-news {
+  max-width: 50%;
+}
+.social-media-container {
+  /* background-color: blue; */
+}
+
+.why-bbc {
+  /* background-color: green; */
 }
