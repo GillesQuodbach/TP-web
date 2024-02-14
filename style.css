@@ -7,6 +7,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 62.5%;
+  padding: 0;
 }
 @font-face {
   font-family: "BBC Reith Sans";
@@ -36,6 +37,10 @@
       format("truetype"),
     url("https://db.onlinewebfonts.com/t/92d9892fa0ef64406bf151c8f730eff2.svg#BBC Reith Serif")
       format("svg");
+}
+
+body {
+  font-family: "BBC Reith Sans";
 }
 
 header {
@@ -198,15 +203,18 @@ header li {
 }
 
 .main-container {
-  padding: 1rem;
+  font-family: "BBC Reith Serif";
   /* background-color: cadetblue; */
+  margin-top: 15px;
 }
 
 .main-part {
   display: grid;
   width: 100%;
-  height: 325px;
+  height: fit-content;
   grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 15px;
+  margin-bottom: 25px;
 }
 
 .second-part {
@@ -234,8 +242,8 @@ header li {
 }
 
 .features-container {
-  margin-top: 75px;
   display: flex;
+  width: 100%;
   padding: 32px 0 16px 16px;
 }
 
@@ -255,29 +263,7 @@ header li {
   border-bottom: 1px solid #7b756f;
 }
 
-.test-grid {
-  width: 100%;
-  height: 350px;
-  background-color: yellow;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 35px;
-}
-.square {
-  width: 50px;
-  height: 50px;
-  background-color: pink;
-}
-
-.square2 {
-  width: 100%;
-  height: 50px;
-  background-color: pink;
-}
-
 .card {
-  padding-left: 16px;
   width: 245px;
   height: fit-content;
   /* border: 1px solid black; */
@@ -370,7 +356,11 @@ header li {
   width: 13px;
   height: 13px;
 }
-
+.bottom-text-container {
+  width: 100%;
+  height: 25px;
+  background-color: yellow;
+}
 .circle {
   height: 30px;
   aspect-ratio: 1;
@@ -527,4 +517,504 @@ footer {
 
 .copyright em {
   font-weight: 700;
+}
+
+.moment {
+  display: block;
+  width: 100%;
+}
+
+.hline {
+  position: relative;
+  width: 85%;
+  height: 35px;
+  top: -19px;
+  margin-right: 16px;
+  border-bottom: 1px solid black;
+}
+
+.see-all {
+  font-size: 0.8rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 0 16px 16px;
+}
+
+.moment-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  width: 100%;
+  padding-left: -16px;
+}
+
+.moment-container div {
+  width: 20% !important;
+  padding-left: 16px;
+}
+
+.moment-container div img {
+  width: 100%;
+}
+
+.moment-container div .video-icon {
+  display: inline-block;
+  position: relative;
+  top: -38px;
+  padding: 8px;
+  background-color: white;
+}
+
+#video-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-mw {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 0 16px 0px;
+}
+
+h2 {
+  padding-right: 16px;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+a:hover {
+  color: #bb1919;
+  text-decoration: underline;
+}
+
+h3 {
+  margin: 0;
+}
+
+.title-mw .hline {
+  position: relative;
+  width: 85%;
+  height: 35px;
+  top: -19px;
+  border-bottom: 1px solid black;
+}
+
+.number {
+  font-family: "BBC Reith Sans";
+  color: #b80000;
+  font-size: 2.7rem;
+  margin-left: 8px;
+  margin-top: -3px;
+  width: 60.8px;
+  height: 48px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.video-content a {
+  color: black;
+  width: 80%;
+  text-decoration: none;
+}
+
+.video-icon svg {
+  width: 10px;
+}
+
+.video-content .video-icon {
+  top: 0;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sm-icons {
+  margin: 0;
+  width: 40%;
+}
+
+.sm-icons ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  border-right: 1px solid #949494;
+}
+
+.sm-icons ul li {
+  text-decoration: none;
+}
+
+.sm-icons ul li a svg {
+  width: 88px;
+  height: 88px;
+}
+
+.sm-icons ul li a svg:hover path {
+  fill: white;
+}
+
+.sm-icons ul li:first-of-type a svg:hover {
+  background-color: #1da1f2;
+}
+
+.sm-icons ul li:nth-of-type(2) a svg:hover {
+  background-color: #4267b2;
+}
+
+.sm-icons ul li:last-of-type a svg:hover {
+  background-color: #e1306c;
+}
+
+.secondary-icons {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+
+.social-media-daily {
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.social-media-daily div:first-of-type {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-daily div:first-of-type svg:last-of-type {
+  margin-left: 16px;
+  margin-top: 5px;
+}
+
+.social-media-divider {
+  border-right: 1px solid #949494;
+  height: 32px;
+  margin: 0 16px 16px 16px;
+}
+
+.social-media-news {
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.social-media-news div:first-of-type {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-news div:first-of-type svg:last-of-type {
+  margin-left: 16px;
+  margin-top: 5px;
+}
+
+.social-media-follow {
+  padding-bottom: 32px;
+  padding-left: 16px;
+  text-align: left;
+}
+
+.social-media-follow ul {
+  margin: 0;
+  padding-left: 0;
+  line-height: 1.45rem;
+  list-style: none;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+  color: #b80000;
+}
+
+.sport {
+  width: 100%;
+}
+
+.sport-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sport-first {
+  width: 40% !important;
+  padding-left: 16px;
+}
+
+.sport-first div img {
+  width: 100%;
+}
+
+.sport-link-first {
+  display: block;
+  position: relative;
+}
+
+.sport-link-first a {
+  color: black;
+  text-decoration: none;
+}
+
+.sport-link-first a h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.sport-link-first a:hover h3 {
+  color: #bb1919;
+  text-decoration: underline;
+}
+
+.sport-link-first a span {
+  color: #bb1919;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.sport-aside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 20% !important;
+  position: relative;
+}
+
+.sport-link ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sport-link ul li {
+  padding-right: 10px;
+}
+
+.sport-link ul li:nth-of-type(2) a {
+  font-weight: normal;
+}
+
+.comment-icon:hover {
+  fill: #1da1f2;
+}
+
+.sport-aside-content {
+  padding-left: 16px;
+}
+
+.sport-aside-content:last-of-type div {
+  height: 138.5px;
+}
+
+.sport-aside-content div img {
+  width: 236.8px;
+  height: 133.2px;
+}
+
+.video-icon {
+  display: inline-block;
+  position: relative;
+  top: -37px;
+  padding: 8px;
+  background-color: white;
+}
+
+.video-icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.clock-icon svg {
+  width: 13px;
+}
+
+.comment-icon svg {
+  width: 13px;
+}
+
+.around-bbc {
+  width: 100%;
+}
+
+.around-bbc a:nth-of-type(2) {
+  font-weight: normal;
+  margin-top: 4px;
+  line-height: 2rem;
+}
+
+.around-bbc-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.around-bbc-first {
+  width: 40% !important;
+  padding-left: 16px;
+}
+
+.around-bbc-first div img {
+  width: 100%;
+}
+
+.around-bbc-aside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 40%;
+  padding-left: 16px;
+}
+
+.most-read ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  text-align: left;
+}
+
+.most-read ul li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+
+.most-read ul li a:hover {
+  color: #b80000;
+  text-decoration: underline;
+}
+
+.in-news {
+  width: 100%;
+}
+
+.in-news-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.in-news-first {
+  width: 38% !important;
+}
+
+.in-news-first div img {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.in-news-aside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 40%;
+}
+
+.features {
+  font-family: "BBC Reith Sans";
+  width: 100%;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.features-first {
+  width: 37%;
+  /* padding-left: 16px; */
+}
+
+.features-first img {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.features-first a {
+  text-decoration: none;
+  color: black;
+}
+
+.features-first a:hover {
+  text-decoration: underline;
+  color: #b80000;
+}
+
+.features-aside {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  width: 40%;
+  margin-right: 16px;
+}
+
+.features-aside-content {
+  padding-right: 10px;
+}
+
+.features-aside-content div {
+  padding: 8px 12px 12px 12px;
+}
+
+.features-aside-content div:nth-of-type(odd) {
+  font-weight: 700;
+}
+
+.features-aside-content div:nth-of-type(even) {
+  background-color: #f2efec;
+  margin: 0;
+  min-height: 80px;
+  margin-bottom: 10px;
+}
+
+.features-aside-content div:first-of-type {
+  background-color: #b80000;
+  color: white;
+}
+
+.features-aside-content div:nth-of-type(3) {
+  background-color: black;
+  color: white;
+}
+
+.features-aside-content div p {
+  margin: 0;
+}
+
+.features-aside-content a:hover {
+  text-decoration: underline;
+  color: #b80000;
+}
+
+.features-icon svg {
+  width: 16px;
+  fill: white;
+}
+
+.title-mw h2 {
+  min-width: 300px;
+  font-family: "BBC Reith Sans";
 }
