@@ -433,7 +433,7 @@ footer {
 .siteMap {
   margin-left: auto;
   margin-right: auto;
-  width: 62%;
+  width: 70%;
 }
 .navigation {
   font-family: "BBC Reith Sans";
@@ -490,6 +490,7 @@ footer {
   list-style: none;
   float: left;
   padding-left: 0;
+  margin-top: 16px;
 }
 
 .policies ul li {
@@ -498,8 +499,10 @@ footer {
 }
 
 .policies ul li a {
-  color: aliceblue;
+  color: #fff;
   text-decoration: none;
+  font-size: 0.825rem;
+  font-weight: 300;
 }
 
 .policies ul li a:hover {
@@ -1105,4 +1108,25 @@ h3 {
 
 .why-bbc {
   /* background-color: green; */
+}
+
+footer h2 {
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+footer span {
+  /* color: green; */
+  padding: 16px 19px 0px 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: red;
+}
+
+footer label {
+  margin-top: 0.8rem;
 }
